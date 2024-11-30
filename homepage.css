@@ -61,3 +61,91 @@ a.active,a:hover{
     display: none;
 }
 
+.slideshow-border {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    border: 7px solid black;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    object-position: center; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+
+.slideshow-border {
+    width: 80%;
+    margin: 0 auto;
+    border: 7px solid black;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.landscape-image-container {
+    width: 100%; 
+    height: 2500x; 
+    margin: 0; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.landscape-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
